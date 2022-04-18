@@ -171,7 +171,9 @@ function admin(){
     // for admin login
       $user = $_POST['user'];
       $pass = $_POST['pass'];
-
+      // echo"<pre>";
+      // print_r($pass);
+      // die();
       $sql_a = "SELECT * FROM `admin` WHERE username = '$user' and password = '$pass'";
       $result_a = mysqli_query($conn,$sql_a);
       $row_a = mysqli_num_rows($result_a);
